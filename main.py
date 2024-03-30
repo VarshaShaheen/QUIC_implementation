@@ -4,8 +4,8 @@ import os
 from quic import (generate_ecdhe_key_pair, serialize_public_key, deserialize_public_key,
                   derive_pre_master_secret, derive_handshake_secrets, create_finished_message,
                   create_quic_finished_packet, generate_hello, decode_quic_packet)
-from client import generate_client_hello_payload  # This needs to be adjusted if it's not already
-from server import generate_server_hello_payload  # Adjusted to accept server_public_key_serialized
+from client import generate_client_hello_payload
+from server import generate_server_hello_payload
 
 HOST = '127.0.0.1'
 CLIENT_PORT = 65432
